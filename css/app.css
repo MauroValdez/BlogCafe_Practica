@@ -202,3 +202,47 @@ h4 { font-size: 2.8rem; }
   padding-bottom: 3rem;
   margin-top: 4rem;  
 }
+
+/** =--------- PAGINA NOSOTROS -----------= **/
+
+@media (min-width: 768px) {
+  .sobre-nosotros {
+    display: flex;
+    gap: 2rem;
+  }
+  .sobre-nosotros__imagen,
+  .sobre-nosotros__texto {
+    flex-basis: 50%;
+  }
+}
+
+/** =--------- PAGINA CURSOS -----------= **/
+
+.curso {
+  padding: 3rem 0;
+  border-bottom: 1px solid var(--gris);
+}
+
+.curso:last-of-type {
+  border: none;
+}
+
+@media (min-width: 768px) {
+  .curso {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 2rem;
+  }
+}
+
+.curso__label {
+  font-family: var(--heading);
+  font-weight: bold;
+}
+
+.curso__info {
+  font-weight: normal;
+}
+
+.curso__label, .curso__info { font-size: 2rem; }
+
